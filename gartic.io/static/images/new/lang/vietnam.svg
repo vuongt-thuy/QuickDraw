@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 192.4 190.1" style="enable-background:new 0 0 192.4 190.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#002043;}
+	.st1{fill:#FFFFFF;}
+	.st2{clip-path:url(#SVGID_2_);}
+	.st3{fill:#CC3232;}
+	.st4{fill:#FFC303;}
+</style>
+<circle class="st0" cx="96.2" cy="95.1" r="79.8"/>
+<path class="st0" d="M3.3,95.1c0-51.3,41.5-92.8,92.8-92.9S189,43.7,189,95c0,51.3-41.5,92.8-92.8,92.9C45,187.8,3.4,146.3,3.3,95.1
+	z M162.9,95.1c0-36.8-29.9-66.7-66.7-66.7c-36.8,0-66.7,29.9-66.7,66.7s29.9,66.7,66.7,66.7c0,0,0,0,0,0
+	C133,161.7,162.8,131.9,162.9,95.1z"/>
+<circle class="st1" cx="96.2" cy="95.1" r="79.8"/>
+<g>
+	<defs>
+		<circle id="SVGID_1_" cx="96.2" cy="95.1" r="70.4"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st2">
+		<rect x="-1.1" y="3" class="st3" width="173" height="169.4"/>
+	</g>
+</g>
+<polygon class="st4" points="96.2,65.2 105.9,84.9 127.5,88 111.9,103.3 115.6,124.8 96.2,114.6 76.9,124.8 80.6,103.3 64.9,88 
+	86.5,84.9 "/>
+</svg>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 192.4 190.1" style="enable-background:new 0 0 192.4 190.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#002043;}
+	.st1{fill:#FFFFFF;}
+	.st2{clip-path:url(#SVGID_2_);}
+	.st3{fill:#BC2F2F;}
+	.st4{fill:#012B68;}
+	.st5{fill:none;}
+</style>
+<circle class="st0" cx="96.2" cy="95" r="79.8"/>
+<path class="st0" d="M189,95c0,51.3-41.5,92.8-92.8,92.9S3.4,146.3,3.3,95.1c0-51.3,41.5-92.8,92.8-92.9c0,0,0.1,0,0.1,0
+	C147.4,2.3,188.9,43.8,189,95z M29.5,95c0,36.8,29.8,66.7,66.7,66.7c36.8,0,66.7-29.8,66.7-66.7c0-36.8-29.8-66.7-66.7-66.7
+	c0,0,0,0,0,0C59.4,28.4,29.6,58.2,29.5,95z"/>
+<circle class="st1" cx="96.2" cy="94.7" r="79.8"/>
+<g>
+	<defs>
+		<circle id="SVGID_1_" cx="96.2" cy="95" r="70.4"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st2">
+		<rect x="12.5" y="139.7" class="st3" width="173" height="28.2"/>
+		<rect x="8.4" y="22.7" class="st3" width="173" height="28.2"/>
+		<rect x="21.7" y="72.7" class="st4" width="148.8" height="45.9"/>
+		<rect x="12.5" y="17.8" class="st5" width="173" height="50.1"/>
+	</g>
+</g>
+</svg>

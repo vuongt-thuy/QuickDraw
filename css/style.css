@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font: 20px sans-serif;
+  overflow: hidden;
+}
+body > button {
+  position: absolute;
+  text-transform: uppercase;
+  padding: 1em;
+  background: transparent;
+  border: 1px solid;
+  outline: none;
+}
+#btnClear {
+  width: 100px;
+  height: 40px;
+  top: 10px;
+  left: 0px;
+  position: absolute;
+  background-image: url('../static/images/eraser.png');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#btnSkip {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  color: #0A5EFB;
+  font-weight: bold;
+}
+#wrapper {
+  height: 100%;
+  width: 100%;
+}
+#canvas,#plot {
+    display: inline-block;
+    vertical-align: top;
+}
+#canvas {
+  height: 80%;
+  border-bottom: 2px solid teal;
+  width: 100%;
+  cursor: pointer;
+}
+#plot {
+  height: 50%;
+  border: 1px solid black;
+  width: 100%;
+  background-color: #bfbfbf;
+}
