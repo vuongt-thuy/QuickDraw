@@ -10,7 +10,7 @@ include 'language.php';
 <!-- /Added by HTTrack -->
 <head>
     <title><?php echo $title[$language]['2'] ; ?></title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" href="static/images/favicon.png">
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#0085FF" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
@@ -83,7 +83,9 @@ include 'language.php';
                                             <a class="ic-iOS" href="https://itunes.apple.com/us/app/gartic-io/id1270393677?mt=8"><p>iOS</p></a>
                                         </span>
                                     </div>
-                                    <div class="logo internal"><a href="index.php"><figure></figure></a></div>
+                                    <div class="logo internal"><a href="index.php"><!-- <figure></figure> -->
+                                        <img src="static/images/logo.png" alt="" width="80%">
+                                    </a></div>
                                     <div class="userLogged">
                                         <div class="infos"><span>User3773</span></div>
                                         <div>

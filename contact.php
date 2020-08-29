@@ -10,8 +10,8 @@ include 'language.php';
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <!-- /Added by HTTrack -->
 <head>
-    <title><?php echo $contact_page[$language]['0'] ; ?></title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title><?php echo $title[$language]['0'] ; ?></title>
+    <link rel="icon" href="static/images/favicon.png">
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#0085FF" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
@@ -84,7 +84,12 @@ include 'language.php';
                                             <a class="ic-iOS" href="https://itunes.apple.com/us/app/gartic-io/id1270393677?mt=8"><p>iOS</p></a>
                                         </span>
                                     </div>
-                                    <div class="logo internal"><a href="index.php"><figure></figure></a></div>
+                                    <div class="logo internal">
+                                        <a href="index.php">
+                                            <!-- <figure></figure> -->
+                                            <img src="static/images/logo.png" alt="" width="80%">
+                                        </a>
+                                    </div>
                                     <div class="userLogged">
                                         <div class="infos"><span>User3773</span></div>
                                         <div>
@@ -127,13 +132,13 @@ include 'language.php';
                         </div>
                         <footer>
                             <nav>
-                               <a href="download.php?language=<?php echo $language ?>"><?php echo $footer[$language]['0'] ; ?></a>
-                               <a href="terms.txt" target="_blank"><?php echo $footer[$language]['1'] ; ?></a>
-                               <a href="privacy.txt" target="_blank"><?php echo $footer[$language]['2'] ; ?></a>
-                               <a href="thanks.php?language=<?php echo $language ?>"><?php echo $footer[$language]['3'] ; ?></a>
-                               <a href="contact.php?language=<?php echo $language ?>"><?php echo $footer[$language]['4'] ; ?></a>
-                           </nav>
-                           <div class="follow">
+                             <a href="download.php?language=<?php echo $language ?>"><?php echo $footer[$language]['0'] ; ?></a>
+                             <a href="terms.txt" target="_blank"><?php echo $footer[$language]['1'] ; ?></a>
+                             <a href="privacy.txt" target="_blank"><?php echo $footer[$language]['2'] ; ?></a>
+                             <a href="thanks.php?language=<?php echo $language ?>"><?php echo $footer[$language]['3'] ; ?></a>
+                             <a href="contact.php?language=<?php echo $language ?>"><?php echo $footer[$language]['4'] ; ?></a>
+                         </nav>
+                         <div class="follow">
                             <a href="https://www.facebook.com/gartic.io/" class="ic-facebook" target="_blank"></a><a href="https://twitter.com/garticio" class="ic-twitter" target="_blank"></a>
                             <a href="https://www.youtube.com/channel/UCVAzJZIgcEt31Cf8REvGuhg" class="ic-youtube" target="_blank"></a><a href="https://www.instagram.com/gartic.io/" class="ic-instagram" target="_blank"></a>
                             <a href="https://discord.gg/9TTZau3" class="ic-discord" target="_blank"></a>

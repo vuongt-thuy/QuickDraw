@@ -11,7 +11,7 @@ include 'language.php';
 <!-- /Added by HTTrack -->
 <head>
     <title><?php echo $playgame[$language]['0'] ; ?></title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" href="static/images/favicon.png">
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#0085FF" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
@@ -88,7 +88,9 @@ include 'language.php';
                                         </span>
                                     </div>
 
-                                    <div class="logo internal"><a href="index.php"><figure></figure></a></div>
+                                    <div class="logo internal"><a href="index.php"><!-- <figure></figure> -->
+                                        <img src="static/images/logo.png" alt="" width="80%">
+                                    </a></div>
                                     <a href="https://twitter.com/GarticIO/status/1291743455841050625" target="_blank" class="lastUpdates">
                                         <h5><?php echo $top_nav[$language]['2'] ; ?></h5>
                                         <span>

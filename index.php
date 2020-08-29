@@ -25,7 +25,7 @@ if((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langua
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Quick Draw</title>
-	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" href="static/images/favicon.png">
 	<link rel="stylesheet" type="text/css" href="_next/static/css/6bd8ec9d.99489d07.chunk.css">
 	<link rel="stylesheet" href="static/css/nprogress.css" />
 
@@ -102,7 +102,8 @@ if((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langua
     									</span>
     								</div>
     								<div class="logo">
-    									<figure></figure>
+    									<!-- <figure></figure> -->
+                                        <img src="static/images/logo.png" alt="" width="80%">
     									<span><?php echo $top_nav[$language]['1'] ; ?></span>
     								</div>
     								<a href="https://twitter.com/GarticIO/status/1291743455841050625" target="_blank" class="lastUpdates">
@@ -176,7 +177,6 @@ if((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langua
                    </footer>
                </div>
            </div>
-           <div class="banner"><div id="gartic-io_160x600"></div></div>
            <canvas id="fundo"></canvas>
 
            <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
