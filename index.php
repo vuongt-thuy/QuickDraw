@@ -117,10 +117,6 @@ if((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langua
     										<div class="icon"></div>
     										<span>info</span>
     									</div>
-    									<div class="login">
-    										<div class="icon"></div>
-    										<span>login</span>
-    									</div>
     								</div>
     							</div>
     						</header>
@@ -144,111 +140,66 @@ if((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langua
     												<span><?php echo $content_left[$language]['2'] ; ?>:</span>
     												<label class="select">
     													<select onchange="set_language()" name="language" id="language">    						<optgroup label="Available Themes">
-                                                           <option value="en" <?php echo $en_select ; ?> >English</option>
-                                                           <option value="vi" <?php echo $vn_select ; ?> >Tiếng Việt</option>
-                                                       </optgroup>
-                                                   </select>
-                                               </label>                                                    
-                                           </div>
-                                       </div>
-                                   </div>
-                                   <div class="actions">
-                                       <a class="btYellowBig ic-playHome" href="playgame.php?language=<?php echo $language ?>">
+                                                         <option value="en" <?php echo $en_select ; ?> >English</option>
+                                                         <option value="vi" <?php echo $vn_select ; ?> >Tiếng Việt</option>
+                                                     </optgroup>
+                                                 </select>
+                                             </label>                                                    
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="actions">
+                                     <a class="btYellowBig ic-playHome" href="playgame.php?language=<?php echo $language ?>">
                                         <strong><?php echo $content_left[$language]['3'] ; ?>!</strong>
-                                        </a>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="or"><span><?php echo $content_left[$language]['4'] ; ?></span></div>
-                            <div class="login">
-                              <div>
-                               <h3>LOGIN HERE</h3>
-                               <div class="advantagesLogin">
-                                <span><p>CREATE NEW THEMES</p></span><span><p>FAVORITE ROOMS</p></span><span><p>CHAT WITH PLAYERS</p></span>
-                            </div>
-                            <div class="wrapper-login">
-                                <span class="choose-login"><p>CHOOSE WAY TO LOGIN:</p></span>
-                                <div class="actionsRS">
-                                 <span>
-                                  <a class="loginTwitter ic-TwHome" href="https://api.twitter.com/oauth/authenticate?oauth_token=uHEolQAAAAAA2_OIAAABdABgqQM"><span>Twitter</span></a>
-                                  <a
-                                  class="loginFacebook ic-FbHome"
-                                  href="https://www.facebook.com/v3.2/dialog/oauth?response_type=code&amp;redirect_uri=https%3A%2F%2Fgartic.io%2Ffacebook%2Fcallback&amp;scope=public_profile&amp;client_id=1714114018608430"
-                                  >
-                                  <span>Facebook</span>
-                              </a>
-                              <a
-                              class="loginGoogle ic-GoHome"
-                              href="https://accounts.google.com/o/oauth2/v2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fgartic.io%2Fgoogle%2Fcallback&amp;scope=email%20profile&amp;client_id=858650259394-36rvp0fio2o1ldu6bn48slmjtdmmk0a2.apps.googleusercontent.com"
-                              >
-                              <span>Google</span>
-                          </a>
-                      </span>
-                      <span>
-                        <a class="loginVK ic-VKHome" href="https://oauth.vk.com/authorize?response_type=code&amp;redirect_uri=https%3A%2F%2Fgartic.io%2Fvk%2Fcallback&amp;scope=email&amp;client_id=7324765">
-                         <span>VK</span>
-                     </a>
-                     <a
-                     class="loginReddit ic-RDHome"
-                     href="https://ssl.reddit.com/api/v1/authorize?duration=permanent&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fgartic.io%2Freddit%2Fcallback&amp;scope=identity&amp;state=login&amp;client_id=eDp3rKrJVqjDyg"
-                     >
-                     <span>Reddit</span>
-                 </a>
-                 <a
-                 class="loginDiscord ic-DCHome"
-                 href="https://discordapp.com/api/oauth2/authorize?response_type=code&amp;redirect_uri=https%3A%2F%2Fgartic.io%2Fdiscord%2Fcallback&amp;scope=identify%20email&amp;client_id=679036285263806655"
-                 >
-                 <span>Discord</span>
-             </a>
-         </span>
-     </div>
- </div>
-</div>
-</div>
-</div>
-</div>
+                            
+                        </div>
+                    </div>
 
 
 
-<footer>
-    <nav>
-     <a href="download.php?language=<?php echo $language ?>"><?php echo $footer[$language]['0'] ; ?></a>
-     <a href="terms.txt" target="_blank"><?php echo $footer[$language]['1'] ; ?></a>
-     <a href="privacy.txt" target="_blank"><?php echo $footer[$language]['2'] ; ?></a>
-     <a href="thanks.php?language=<?php echo $language ?>"><?php echo $footer[$language]['3'] ; ?></a>
-     <a href="contact.php?language=<?php echo $language ?>"><?php echo $footer[$language]['4'] ; ?></a>
- </nav>
- <div class="follow">
-     <a href="https://www.facebook.com/gartic.io/" class="ic-facebook" target="_blank"></a><a href="https://twitter.com/garticio" class="ic-twitter" target="_blank"></a>
-     <a href="https://www.youtube.com/channel/UCVAzJZIgcEt31Cf8REvGuhg" class="ic-youtube" target="_blank"></a><a href="https://www.instagram.com/gartic.io/" class="ic-instagram" target="_blank"></a>
-     <a href="https://discord.gg/9TTZau3" class="ic-discord" target="_blank"></a>
- </div>
-</footer>
-</div>
-</div>
-<div class="banner"><div id="gartic-io_160x600"></div></div>
-<canvas id="fundo"></canvas>
+                    <footer>
+                        <nav>
+                           <a href="download.php?language=<?php echo $language ?>"><?php echo $footer[$language]['0'] ; ?></a>
+                           <a href="terms.txt" target="_blank"><?php echo $footer[$language]['1'] ; ?></a>
+                           <a href="privacy.txt" target="_blank"><?php echo $footer[$language]['2'] ; ?></a>
+                           <a href="thanks.php?language=<?php echo $language ?>"><?php echo $footer[$language]['3'] ; ?></a>
+                           <a href="contact.php?language=<?php echo $language ?>"><?php echo $footer[$language]['4'] ; ?></a>
+                       </nav>
+                       <div class="follow">
+                           <a href="https://www.facebook.com/gartic.io/" class="ic-facebook" target="_blank"></a><a href="https://twitter.com/garticio" class="ic-twitter" target="_blank"></a>
+                           <a href="https://www.youtube.com/channel/UCVAzJZIgcEt31Cf8REvGuhg" class="ic-youtube" target="_blank"></a><a href="https://www.instagram.com/gartic.io/" class="ic-instagram" target="_blank"></a>
+                           <a href="https://discord.gg/9TTZau3" class="ic-discord" target="_blank"></a>
+                       </div>
+                   </footer>
+               </div>
+           </div>
+           <div class="banner"><div id="gartic-io_160x600"></div></div>
+           <canvas id="fundo"></canvas>
 
-<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
-<script>
-    function set_language() {
-        var language = jQuery('#language').val();
-        window.location.href = "http://localhost:81/QuickDraw/?language="+language;
-    }
-</script>
-<script nomodule="" src="_next/static/runtime/polyfills-72c223e6dcb99d818fa8.js"></script>
-<script async="" data-next-page="/" src="_next/static/jI9EZqYNN6u6IZXd9e4uV/pages/index.js"></script>
-<script async="" data-next-page="/_app" src="_next/static/jI9EZqYNN6u6IZXd9e4uV/pages/_app.js"></script>
-<script src="_next/static/runtime/webpack-9369c5c69dbf6d4912cb.js" async=""></script>
-<script src="_next/static/chunks/framework.98c1b221acb34aa9927b.js" async=""></script>
-<script src="_next/static/chunks/ea88be26.d6bd6ff5c3174e291010.js" async=""></script>
-<script src="_next/static/chunks/6bd8ec9d.2c372599cf640b277883.js" async=""></script>
-<script src="_next/static/chunks/commons.53b19a6d3b90ba94951f.js" async=""></script>
-<script src="_next/static/chunks/900019541db2cde785725a04d23f9eb12f521a3a.e7d226ba7a0750015a7d.js" async=""></script>
-<script src="_next/static/chunks/styles.3ae7cd3526c5aecda59d.js" async=""></script>
-<script src="_next/static/runtime/main-4de108aaa74dc94c21f3.js" async=""></script>
-<script src="_next/static/chunks/4c54af6f7da728cb81ab63f2943b52b7d8a59b2f.6e2ee8ef7ca0f7ff1529.js" async=""></script>
-<script src="_next/static/chunks/69442508138b332cb1070c411bc37bdb1bd6eb52.67a895baa37b784729a6.js" async=""></script>
-<script src="_next/static/jI9EZqYNN6u6IZXd9e4uV/_buildManifest.js" async=""></script>
-<script src="_next/static/jI9EZqYNN6u6IZXd9e4uV/_ssgManifest.js" async=""></script>
-</body>
-</html>
+           <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+           <script>
+            function set_language() {
+                var language = jQuery('#language').val();
+                window.location.href = "http://localhost:81/QuickDraw/?language="+language;
+            }
+        </script>
+        <script nomodule="" src="_next/static/runtime/polyfills-72c223e6dcb99d818fa8.js"></script>
+        <script async="" data-next-page="/" src="_next/static/jI9EZqYNN6u6IZXd9e4uV/pages/index.js"></script>
+        <script async="" data-next-page="/_app" src="_next/static/jI9EZqYNN6u6IZXd9e4uV/pages/_app.js"></script>
+        <script src="_next/static/runtime/webpack-9369c5c69dbf6d4912cb.js" async=""></script>
+        <script src="_next/static/chunks/framework.98c1b221acb34aa9927b.js" async=""></script>
+        <script src="_next/static/chunks/ea88be26.d6bd6ff5c3174e291010.js" async=""></script>
+        <script src="_next/static/chunks/6bd8ec9d.2c372599cf640b277883.js" async=""></script>
+        <script src="_next/static/chunks/commons.53b19a6d3b90ba94951f.js" async=""></script>
+        <script src="_next/static/chunks/900019541db2cde785725a04d23f9eb12f521a3a.e7d226ba7a0750015a7d.js" async=""></script>
+        <script src="_next/static/chunks/styles.3ae7cd3526c5aecda59d.js" async=""></script>
+        <script src="_next/static/runtime/main-4de108aaa74dc94c21f3.js" async=""></script>
+        <script src="_next/static/chunks/4c54af6f7da728cb81ab63f2943b52b7d8a59b2f.6e2ee8ef7ca0f7ff1529.js" async=""></script>
+        <script src="_next/static/chunks/69442508138b332cb1070c411bc37bdb1bd6eb52.67a895baa37b784729a6.js" async=""></script>
+        <script src="_next/static/jI9EZqYNN6u6IZXd9e4uV/_buildManifest.js" async=""></script>
+        <script src="_next/static/jI9EZqYNN6u6IZXd9e4uV/_ssgManifest.js" async=""></script>
+    </body>
+    </html>

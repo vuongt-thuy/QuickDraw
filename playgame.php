@@ -10,7 +10,7 @@ include 'language.php';
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <!-- /Added by HTTrack -->
 <head>
-    <title><?php echo $title[$language]['2'] ; ?></title>
+    <title><?php echo $playgame[$language]['0'] ; ?></title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#0085FF" />
@@ -25,8 +25,9 @@ include 'language.php';
     <meta charset="UTF-8" />
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-3906902-31"></script>
     <script async="" src="../www.googletagservices.com/tag/js/gpt.js"></script>
-  <link rel="stylesheet" href="css/w3.css">
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="6bd8ec9d.99489d07.chunk.css">
     <script>
             //analytics
             window.dataLayer = window.dataLayer || [];
@@ -77,30 +78,28 @@ include 'language.php';
                 <div id="content">
                     <div class="screenSystem" style="height: ;">
                         <div id="screens">
-                            <header class="hide">
-                                <div class="logged">
+                            <header class="">
+                                <div class="">
                                     <div class="getApp">
-                                        <h5><?php echo $top_nav[$language]['0'] ; ?>!</h5>
+                                        <h5><?php echo $top_nav[$language]['0'] ; ?></h5>
                                         <span>
                                             <a class="ic-gPlay" href="https://play.google.com/store/apps/details?id=io.gartic.Gartic"><p>ANDROID</p></a>
                                             <a class="ic-iOS" href="https://itunes.apple.com/us/app/gartic-io/id1270393677?mt=8"><p>iOS</p></a>
                                         </span>
                                     </div>
+
                                     <div class="logo internal"><a href="index.php"><figure></figure></a></div>
-                                    <div class="userLogged">
-                                        <div class="infos"><span>User3773</span></div>
-                                        <div>
-                                            <div class="avatar"><div class="av avt0"></div></div>
-                                        </div>
-                                    </div>
+                                    <a href="https://twitter.com/GarticIO/status/1291743455841050625" target="_blank" class="lastUpdates">
+                                        <h5><?php echo $top_nav[$language]['2'] ; ?></h5>
+                                        <span>
+                                            <strong></strong>
+                                            <p>Looking for Discord mods!</p>
+                                        </span>
+                                    </a>
                                     <div class="mobileActions">
                                         <div class="options">
                                             <div class="icon"></div>
-                                            <span>info</span>
-                                        </div>
-                                        <div class="login">
-                                            <div class="icon"></div>
-                                            <span>login</span>
+                                            <span><?php echo $top_nav[$language]['3'] ; ?></span>
                                         </div>
                                     </div>
                                 </div>
@@ -122,7 +121,9 @@ include 'language.php';
                                     </div>
                                     
                                 </div> -->
-
+                                <div class="title">
+                                    <span class="gTitle keyword"><h2>KEY WORD</h2></span>
+                                </div>
                                 <div class="content download" id="tools">
                                     <!-- Draw Board -->
                                     <button class="" id="btnClear" onclick="clearDrawing()"></button>
@@ -131,8 +132,15 @@ include 'language.php';
                                     </button>
                                     <div id="wrapper">
                                         <canvas id="canvas" resize></canvas>
-                                        <h2 style="text-align: center; padding-top: 10px; color: #0A5EFB;"><?php echo $playgame[$language]['0'] ; ?></h2>
-                                        <h2 id="result" style="text-align: center; color: red;"></h2>
+                                        <!-- <h2 style="text-align: center; padding-top: 10px; color: #0A5EFB;"><?php echo $playgame[$language]['1'] ; ?></h2> -->
+                                        <h2 id="result" style="text-align: center; color: #fd5c20;"></h2>
+                                        <style type="text/css">
+                                            #result::before {
+                                                content: "<?php echo $playgame[$language]['2'] ; ?>... ";
+                                                font-style: normal;
+                                                color: #ccc;
+                                            }
+                                        </style>
                                     </div>
                                 </div>
 

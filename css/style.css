@@ -22,7 +22,7 @@ body > button {
 #btnClear {
   width: 100px;
   height: 40px;
-  top: 10px;
+  top: 20px;
   left: 0px;
   position: absolute;
   background-image: url('../static/images/eraser.png');
@@ -31,10 +31,11 @@ body > button {
   background-position: center;
 }
 #btnSkip {
-  top: 10px;
+  top: 25px;
   right: 10px;
   position: absolute;
-  color: #0A5EFB;
+  /* color: #0A5EFB; */
+  color: darkorange;
   font-weight: bold;
 }
 #wrapper {
@@ -42,14 +43,16 @@ body > button {
   width: 100%;
 }
 #canvas,#plot {
-    display: inline-block;
-    vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
 }
 #canvas {
-  height: 80%;
-  border-bottom: 2px solid teal;
+  height: 88%;
+  /* border-bottom: 2px solid teal; */
   width: 100%;
   cursor: pointer;
+  overflow: hidden;
+  /* padding-top: 55px; */
 }
 #plot {
   height: 50%;
@@ -57,3 +60,45 @@ body > button {
   width: 100%;
   background-color: #bfbfbf;
 }
+
+#result {
+  font-family:nunitobold;
+  font-size: 25px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 640px) {
+  #result {
+    position: absolute;
+    bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 640px) and (min-width: 500px) { 
+  #btnClear {
+    top: 10px;
+    left: -10px;
+  }
+
+  #btnSkip { 
+    top: 17px;
+    right: 10px;
+  }  
+
+  #canvas {
+    width: 147%;
+    height: 88%;
+  }
+}
+
+@media screen and (max-width: 500px) { 
+  #btnClear {
+    left: -15px;
+  }
+
+  #canvas {
+    height: 88%;
+    padding: 0;
+  }
+} 
+

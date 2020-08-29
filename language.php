@@ -5,13 +5,13 @@ $title = array(
 );
 
 $top_nav = array (
-	'en' => array("GET THE APP!", "DRAW, GUESS, WIN", "LAST UPDATES"),
-	'vn' => array("TẢI ỨNG DỤNG!", "VẼ, ĐOÁN, THẮNG", "NHỮNG CẬP NHẬT TRƯỚC")
+	'en' => array("GET THE APP!", "DRAW, GUESS, WIN", "LAST UPDATES", "INFO"),
+	'vn' => array("TẢI ỨNG DỤNG!", "VẼ, ĐOÁN, THẮNG", "NHỮNG CẬP NHẬT TRƯỚC", "THÔNG TIN")
 );
 
 $content_left = array(
-	'en' => array("QUICK PLAY", "NICKNAME", "LANGUAGE", "PLAY", "OR"),
-	'vn' => array("CHƠI NGAY", "BIỆT DANH", "NGÔN NGỮ", "CHƠI", "HOẶC")
+	'en' => array("QUICK PLAY", "NICKNAME", "LANGUAGE", "PLAY"),
+	'vn' => array("CHƠI NGAY", "BIỆT DANH", "NGÔN NGỮ", "CHƠI")
 );
 
 $footer = array(
@@ -35,8 +35,8 @@ $contact_page = array(
 );
 
 $playgame = array(
-	'en' => array("RESULT"),
-	'vn' => array("KẾT QUẢ")
+	'en' => array("Play Game", "RESULT", "I see"),
+	'vn' => array("Chơi game", "KẾT QUẢ", "Tôi thấy")
 );
 
 if (isset($_GET['language'])) {
