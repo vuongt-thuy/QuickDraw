@@ -75,7 +75,7 @@ include 'language.php';
                 <div id="content">
                     <div class="screenSystem" style="height: ;">
                         <div id="screens">
-                            <header class="hide">
+                            <header class="">
                                 <div class="logged">
                                     <div class="getApp">
                                         <h5><?php echo $top_nav[$language]['0'] ; ?>!</h5>
@@ -95,10 +95,6 @@ include 'language.php';
                                         <div class="options">
                                             <div class="icon"></div>
                                             <span>info</span>
-                                        </div>
-                                        <div class="login">
-                                            <div class="icon"></div>
-                                            <span>login</span>
                                         </div>
                                     </div>
                                 </div>
