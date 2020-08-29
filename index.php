@@ -183,7 +183,8 @@ if((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langua
            <script>
             function set_language() {
                 var language = jQuery('#language').val();
-                window.location.href = "http://localhost:81/QuickDraw/?language="+language;
+                var nameURL = window.location.hostname;
+                window.location.href = "http://"+nameURL+"/QuickDraw/?language="+language;
             }
         </script>
         <script nomodule="" src="_next/static/runtime/polyfills-72c223e6dcb99d818fa8.js"></script>
