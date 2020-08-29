@@ -79,34 +79,32 @@ include 'language.php';
                     <div class="screenSystem" style="height: ;">
                         <div id="screens">
                             <header class="">
-                                <div class="">
+                                <div class="logged">
                                     <div class="getApp">
-                                        <h5><?php echo $top_nav[$language]['0'] ; ?></h5>
+                                        <h5><?php echo $top_nav[$language]['0'] ; ?>!</h5>
                                         <span>
                                             <a class="ic-gPlay" href="https://play.google.com/store/apps/details?id=io.gartic.Gartic"><p>ANDROID</p></a>
                                             <a class="ic-iOS" href="https://itunes.apple.com/us/app/gartic-io/id1270393677?mt=8"><p>iOS</p></a>
                                         </span>
                                     </div>
-
                                     <div class="logo internal"><a href="index.php"><!-- <figure></figure> -->
-                                        <img src="static/images/logo.png" alt="" width="80%">
+                                        <img src="static/images/logo.png" alt="" width="94%" id="logo-playgame">
                                     </a></div>
-                                    <a href="https://twitter.com/GarticIO/status/1291743455841050625" target="_blank" class="lastUpdates">
-                                        <h5><?php echo $top_nav[$language]['2'] ; ?></h5>
-                                        <span>
-                                            <strong></strong>
-                                            <p>Looking for Discord mods!</p>
-                                        </span>
-                                    </a>
+                                    <div class="userLogged">
+                                        <div class="infos"><span>User3773</span></div>
+                                        <div>
+                                            <div class="avatar"><div class="av avt0"></div></div>
+                                        </div>
+                                    </div>
                                     <div class="mobileActions">
                                         <div class="options">
                                             <div class="icon"></div>
-                                            <span><?php echo $top_nav[$language]['3'] ; ?></span>
+                                            <span>info</span>
                                         </div>
                                     </div>
                                 </div>
                             </header>
-                            <div>
+                            <div class="main-contain">
                                 <!-- <div class="title">
                                     <span class="gTitle"><h2><?php echo $thanks_page[$language]['0'] ; ?></h2></span>
                                 </div>
@@ -123,10 +121,10 @@ include 'language.php';
                                     </div>
                                     
                                 </div> -->
-                                <div class="title">
+                                <div class="title title-playgame">
                                     <span class="gTitle keyword"><h2>KEY WORD</h2></span>
                                 </div>
-                                <div class="content download" id="tools">
+                                <div class="content download content-playgame" id="tools">
                                     <!-- Draw Board -->
                                     <button class="" id="btnClear" onclick="clearDrawing()"></button>
                                     <button id="btnSkip">

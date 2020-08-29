@@ -85,7 +85,7 @@ include 'language.php';
                                         </span>
                                     </div>
                                     <div class="logo internal"><a href="index.php"><!-- <figure></figure> -->
-                                        <img src="static/images/logo.png" alt="" width="80%">
+                                        <img src="static/images/logo.png" alt="" width="94%">
                                     </a></div>
                                     <div class="userLogged">
                                         <div class="infos"><span>User3773</span></div>

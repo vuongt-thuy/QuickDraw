@@ -5,8 +5,8 @@ $title = array(
 );
 
 $top_nav = array (
-	'en' => array("GET THE APP!", "DRAW, GUESS, WIN", "LAST UPDATES", "INFO"),
-	'vn' => array("TẢI ỨNG DỤNG!", "VẼ, ĐOÁN, THẮNG", "NHỮNG CẬP NHẬT TRƯỚC", "THÔNG TIN")
+	'en' => array("GET THE APP!", "DRAW EVERYTHING AND WIN", "LAST UPDATES", "INFO"),
+	'vn' => array("TẢI ỨNG DỤNG!", "VẼ MỌI THỨ VÀ CHIẾN THẮNG", "NHỮNG CẬP NHẬT TRƯỚC", "THÔNG TIN")
 );
 
 $content_left = array(

@@ -103,7 +103,7 @@ if((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langua
     								</div>
     								<div class="logo">
     									<!-- <figure></figure> -->
-                                        <img src="static/images/logo.png" alt="" width="80%">
+                                        <img src="static/images/logo.png" alt="" width="94%">
     									<span><?php echo $top_nav[$language]['1'] ; ?></span>
     								</div>
     								<a href="https://twitter.com/GarticIO/status/1291743455841050625" target="_blank" class="lastUpdates">

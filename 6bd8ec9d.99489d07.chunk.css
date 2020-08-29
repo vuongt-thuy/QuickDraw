@@ -22930,3 +22930,20 @@ button {
 		position: absolute !important;
 		top: 3px !important;
 	}
+
+	#logo-playgame {
+		width: 100%;
+		margin-left: 23px;
+	}
+
+	.content-playgame {
+		padding: 0 !important;
+	}
+
+	.main-contain {
+		padding: 0 !important;
+	}
+
+	.title-playgame {
+		height: auto !important;
+	}

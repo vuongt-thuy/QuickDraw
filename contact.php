@@ -87,7 +87,7 @@ include 'language.php';
                                     <div class="logo internal">
                                         <a href="index.php">
                                             <!-- <figure></figure> -->
-                                            <img src="static/images/logo.png" alt="" width="80%">
+                                            <img src="static/images/logo.png" alt="" width="94%">
                                         </a>
                                     </div>
                                     <div class="userLogged">
