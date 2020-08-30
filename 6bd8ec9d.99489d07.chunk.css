@@ -22912,6 +22912,10 @@ button {
 			z-index: 9999;
 			margin-top: 24px !important;
 		}
+
+		#logo-playgame {
+			margin: 0px !important;
+		}
 	}
 
 	@media screen and (max-width: 500px) { 
