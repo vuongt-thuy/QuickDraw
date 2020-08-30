@@ -93,6 +93,12 @@ include 'language.php';
                                             <div class="avatar"><div class="av avt0"></div></div>
                                         </div>
                                     </div>
+                                    <div class="mobileActions">
+                                        <div class="options">
+                                            <div class="icon"></div>
+                                            <span>info</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </header>
                             <div>

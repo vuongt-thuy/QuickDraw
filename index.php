@@ -113,6 +113,11 @@ if((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langua
                                       <p>Looking for Discord mods!</p>
                                   </span>
                               </a>
+                              <div class="mobileActions">
+                                 <div class="options">
+                                  <div class="icon"></div>
+                                  <span>info</span>
+                              </div>
                           </div>
                       </div>
                   </header>
