@@ -22951,3 +22951,9 @@ button {
 	.title-playgame {
 		height: auto !important;
 	}
+
+	@media screen and (max-width: 1279px) and (min-width: 641px), screen and (max-height: 809px) {
+		header:not(.game)>div.logged {
+			height: auto !important;
+		}
+	}
