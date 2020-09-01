@@ -206,7 +206,11 @@ function updateScoresHistory(){
 }
 function ConvertEnglishToVietnamese(eng){
   var vie;
-
+  for (var i = 0; i < listKeywordEng.length; i++) {
+    if (listKeywordEng[i] == eng) {
+      vie = listKeywordVie[i];
+    }
+  }
   return vie;
 }
 
@@ -216,10 +220,8 @@ function result() {
   var translations = 
   { 
     "en" : { "keyword" : p_title_en },
-    "vn" : { "keyword" : "Test in VN" }
+    "vi" : { "keyword" : p_title_vn }
   };
-  // var mydata = JSON.parse(dataEng);
-  // alert(mydata[0].eng[0]);
 
   var language = jQuery('#language').text();
   var resultText = translations[language].keyword;

@@ -12,8 +12,8 @@ include 'language.php';
 <head>
     <title><?php echo $playgame[$language]['0'] ; ?></title>
     <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="Keyword/eng.json"></script>
-    <script type="text/javascript" src="Keyword/vie.json"></script>
+    <script type="text/javascript" src="Keyword/eng.js"></script>
+    <script type="text/javascript" src="Keyword/vie.js"></script>
 
     <link rel="icon" href="static/images/favicon.png">
     <link rel="manifest" href="manifest.json" />

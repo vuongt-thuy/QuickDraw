@@ -2,15 +2,15 @@
 include 'language.php';
 
 $en_select='';
-$vn_select='';     
+$vi_select='';     
 $language='';
 
 if((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['language'])){
     $en_select='selected';  
     $language='en';
 }else{
-    $vn_select='selected';
-    $language='vn';
+    $vi_select='selected';
+    $language='vi';
 }
 
 ?>
@@ -131,7 +131,6 @@ if((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langua
                       <h3><?php echo $content_left[$language]['0'] ; ?></h3>
                       <div class="avatar">
                        <div class="av avt0"></div>
-                       <button class="selectAvatar"></button>
                    </div>
                    <div class="containerForm">
                        <div class="fieldset nick">
@@ -142,7 +141,7 @@ if((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langua
                         <label class="select">
                          <select onchange="set_language()" name="language" id="language">    						<optgroup label="Available Themes">
                              <option value="en" <?php echo $en_select ; ?> >English</option>
-                             <option value="vn" <?php echo $vn_select ; ?> >Tiếng Việt</option>
+                             <option value="vi" <?php echo $vi_select ; ?> >Tiếng Việt</option>
                          </optgroup>
                      </select>
                  </label>                                                    
