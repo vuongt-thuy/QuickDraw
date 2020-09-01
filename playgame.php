@@ -11,6 +11,10 @@ include 'language.php';
 <!-- /Added by HTTrack -->
 <head>
     <title><?php echo $playgame[$language]['0'] ; ?></title>
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="Keyword/eng.json"></script>
+    <script type="text/javascript" src="Keyword/vie.json"></script>
+
     <link rel="icon" href="static/images/favicon.png">
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#0085FF" />
@@ -72,6 +76,7 @@ include 'language.php';
         <link rel="preload" href="_next/static/chunks/69442508138b332cb1070c411bc37bdb1bd6eb52.67a895baa37b784729a6.js" as="script" />
     </head>
     <body>
+        <div id="language" hidden="true"><?php echo $language; ?></div>
         <div id="background"></div>
         <div id="__next">
             <div class="nextCenter">
@@ -141,13 +146,13 @@ include 'language.php';
                             </div>
                             <footer>
                                 <nav>
-                                 <a href="download.php?language=<?php echo $language ?>"><?php echo $footer[$language]['0'] ; ?></a>
-                                 <a href="terms.txt" target="_blank"><?php echo $footer[$language]['1'] ; ?></a>
-                                 <a href="privacy.txt" target="_blank"><?php echo $footer[$language]['2'] ; ?></a>
-                                 <a href="thanks.php?language=<?php echo $language ?>"><?php echo $footer[$language]['3'] ; ?></a>
-                                 <a href="contact.php?language=<?php echo $language ?>"><?php echo $footer[$language]['4'] ; ?></a>
-                             </nav>
-                             <div class="follow">
+                                   <a href="download.php?language=<?php echo $language ?>"><?php echo $footer[$language]['0'] ; ?></a>
+                                   <a href="terms.txt" target="_blank"><?php echo $footer[$language]['1'] ; ?></a>
+                                   <a href="privacy.txt" target="_blank"><?php echo $footer[$language]['2'] ; ?></a>
+                                   <a href="thanks.php?language=<?php echo $language ?>"><?php echo $footer[$language]['3'] ; ?></a>
+                                   <a href="contact.php?language=<?php echo $language ?>"><?php echo $footer[$language]['4'] ; ?></a>
+                               </nav>
+                               <div class="follow">
                                 <a href="https://www.facebook.com/gartic.io/" class="ic-facebook" target="_blank"></a><a href="https://twitter.com/garticio" class="ic-twitter" target="_blank"></a>
                                 <a href="https://www.youtube.com/channel/UCVAzJZIgcEt31Cf8REvGuhg" class="ic-youtube" target="_blank"></a><a href="https://www.instagram.com/gartic.io/" class="ic-instagram" target="_blank"></a>
                                 <a href="https://discord.gg/9TTZau3" class="ic-discord" target="_blank"></a>

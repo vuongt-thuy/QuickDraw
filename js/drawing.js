@@ -121,7 +121,7 @@ function checkQuickDraw(){
   var xhr = new XMLHttpRequest();
   xhr.open('POST', url);
   Object.keys(headers).forEach(function(key,index) {
-      xhr.setRequestHeader(key, headers[key]); 
+    xhr.setRequestHeader(key, headers[key]); 
   });
 
   // HTTP Request On Load
@@ -140,11 +140,11 @@ function checkQuickDraw(){
   var data = {
     "input_type":0,
     "requests":[
-      {
-        "language":"quickdraw",
-        "writing_guide":{"width": c_dims.width, "height":c_dims.height},
-        "ink": [ink]
-      }
+    {
+      "language":"quickdraw",
+      "writing_guide":{"width": c_dims.width, "height":c_dims.height},
+      "ink": [ink]
+    }
     ]
   };
 
@@ -188,7 +188,7 @@ function updateScoresHistory(){
       // Add Score to Data Scores
       d_scores[guess].push(score);
     // If Guess is Not In Data Scores... 
-    }else{
+  }else{
       // Init New Guess Index Array for Guess and Add to Score
       d_scores[guess] = createArray(idx_guess+1, null);
       d_scores[guess][idx_guess] = score;
@@ -204,20 +204,36 @@ function updateScoresHistory(){
     }
   }
 }
+function ConvertEnglishToVietnamese(eng){
+  var vie;
+
+  return vie;
+}
 
 function result() {
-  var p_title = scores[0][0];
-  document.getElementById("result").innerHTML = p_title + ' ?';
+  var p_title_en = scores[0][0];
+  var p_title_vn = ConvertEnglishToVietnamese(p_title_en);
+  var translations = 
+  { 
+    "en" : { "keyword" : p_title_en },
+    "vn" : { "keyword" : "Test in VN" }
+  };
+  // var mydata = JSON.parse(dataEng);
+  // alert(mydata[0].eng[0]);
+
+  var language = jQuery('#language').text();
+  var resultText = translations[language].keyword;
+  document.getElementById("result").innerHTML = resultText;
 };
 
 // Create and Fill Array
 function createArray(len, itm) {
-    var arr1 = [itm],
-        arr2 = [];
-    while (len > 0) {
-        if (len & 1) arr2 = arr2.concat(arr1);
-        arr1 = arr1.concat(arr1);
-        len >>>= 1;
-    }
-    return arr2;
+  var arr1 = [itm],
+  arr2 = [];
+  while (len > 0) {
+    if (len & 1) arr2 = arr2.concat(arr1);
+    arr1 = arr1.concat(arr1);
+    len >>>= 1;
+  }
+  return arr2;
 }
