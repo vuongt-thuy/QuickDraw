@@ -1,9 +1,13 @@
 
 // Initialize Variables
 var path, ink, scores;
-var timer = 0, lastTimestamp = 0, lastTimestamp_check = 0, idx_guess = 0;
-var d_scores = {}
-
+var timers = 0, lastTimestamp = 0, lastTimestamp_check = 0, idx_guess = 0;
+var d_scores = {};
+var language = jQuery('#language').text();
+var keywordRequired;
+var p_title_en;
+var numberOfAnswer = 0;
+var totalQuizz = 5;
 // Install Paper.js
 paper.install(window);
 
@@ -24,8 +28,8 @@ window.onload = function() {
 
     // Get Time [ms] for each Guess (needed for accurate Google AI Guessing)
     var thisTimestamp = event.event.timeStamp;
-    if(timer === 0){
-      timer = 1;
+    if(timers === 0){
+      timers = 1;
       var time = 0;
     }else{
       var timeDelta = thisTimestamp - lastTimestamp;
@@ -48,7 +52,7 @@ window.onload = function() {
     var timeDelta = thisTimestamp - lastTimestamp;
     // Get new Time for Ink Array
     var time = ink[2][ink[2].length-1] + timeDelta;
-    
+    console.log(time);
     // Get XY point from event w/ time [ms] to update Ink Array
     updateInk(event.point, time);
     // Draw XY point to Paper Path
@@ -59,10 +63,14 @@ window.onload = function() {
 
     // Check Google AI Quickdraw every 250 m/s 
     if(thisTimestamp - lastTimestamp_check > 250){
-      checkQuickDraw();
       lastTimestamp_check = thisTimestamp;
     }
   }
+  tool.onMouseUp = function(event){
+    setTimeout(()=>{
+      checkQuickDraw();
+    },200);
+  } 
 }
 
 // Initialize Ink Array
@@ -81,7 +89,7 @@ function clearDrawing() {
   initInk();
   
   // Resert Variables
-  timer = 0;
+  timers = 0;
   idx_guess = 0;
   d_scores = {};
   document.getElementById("result").innerHTML = '';
@@ -215,19 +223,65 @@ function ConvertEnglishToVietnamese(eng){
 }
 
 function result() {
-  var p_title_en = scores[0][0];
+  var titleE = ["I see ", "This is "];
+  var titleV = ["Tôi thấy ", "Có vẻ như là ","Đây là "];
+  p_title_en = scores[0][0];
   var p_title_vn = ConvertEnglishToVietnamese(p_title_en);
   var translations = 
   { 
-    "en" : { "keyword" : p_title_en },
-    "vi" : { "keyword" : p_title_vn }
+    "en" : { "keyword" : titleE[Math.floor(Math.random() * titleE.length)] + p_title_en },
+    "vi" : { "keyword" : titleV[Math.floor(Math.random() * titleV.length)] + p_title_vn }
   };
-
-  var language = jQuery('#language').text();
   var resultText = translations[language].keyword;
-  document.getElementById("result").innerHTML = resultText;
+  if (p_title_en == keywordRequired) {
+    $('#tickTrue').css('display', 'block');
+    numberOfAnswer++;
+    document.getElementById("number-of-answers").innerHTML = numberOfAnswer + "/" + totalQuizz;
+    document.getElementById("quizzWin").innerHTML = numberOfAnswer + "/" + totalQuizz;
+    document.getElementById("quizzTimeOut").innerHTML = numberOfAnswer + "/" + totalQuizz;
+    clearDrawing();
+    setTimeout(() => {
+      if (numberOfAnswer < totalQuizz) {
+        InitKeyword();
+      }else if(numberOfAnswer == totalQuizz){
+        $('#popUp').css('display', 'block');
+        $('#winPopup').css('display','block');
+        $('#tickTrue').css('display', 'none');
+      }
+    }, 2000);
+  }else{
+    document.getElementById("result").innerHTML = resultText;
+  }
 };
 
+// Game Controller
+function GameController(){
+  console.log("gameController");
+  $('#popUp').css('display', 'none');
+  $('#winPopup').css('display','none');
+  $('#timeOutPopup').css('display','none');
+  document.getElementById("number-of-answers").innerHTML = numberOfAnswer + "/" + totalQuizz;
+  document.getElementById("quizzWin").innerHTML = numberOfAnswer + "/" + totalQuizz;
+  document.getElementById("quizzTimeOut").innerHTML = numberOfAnswer + "/" + totalQuizz;
+  InitKeyword();
+}
+function InitKeyword(){
+  $('#tickTrue').css('display', 'none');
+  keywordRequired = listKeywordEng[Math.floor(Math.random() * listKeywordEng.length)];
+  var keywordRequiredVie = ConvertEnglishToVietnamese(keywordRequired);
+  var translationsKeyword =
+  {
+    "en" : {"keywordRequire" : keywordRequired},
+    "vi" : {"keywordRequire" : keywordRequiredVie}
+  };
+  var keywordRequiredText = translationsKeyword[language].keywordRequire;
+  document.getElementById("keywordRequired").innerHTML = keywordRequiredText;
+}
+function Skip(){
+  console.log("Skip");
+  clearDrawing();
+  InitKeyword();
+}
 // Create and Fill Array
 function createArray(len, itm) {
   var arr1 = [itm],

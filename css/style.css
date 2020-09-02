@@ -66,7 +66,11 @@ body > button {
   font-size: 25px;
   font-style: italic;
 }
-
+#tickTrue{
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 20%
+}
 @media screen and (max-width: 640px) {
   #result {
     position: absolute;

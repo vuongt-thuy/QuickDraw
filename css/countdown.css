@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100');
+
+button[data-setter] {
+  outline: none;
+  background: transparent;
+  border: none;
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 18px;
+  width: 25px;
+  height: 30px;
+  color: #F7958E;
+  cursor: pointer;
+}
+
+button[data-setter]:hover { opacity: 0.5; }
+
+.container {
+  position: relative;
+  top: 0px;
+  width: 10px;
+  margin-right: 10%;
+}
+
+.setters {
+  position: absolute;
+  left: 85px;
+  top: 75px;
+}
+
+.minutes-set {
+  float: left;
+  margin-right: 28px;
+}
+
+.seconds-set { float: right; }
+
+.controlls {
+  position: absolute;
+  left: 25px;
+  top: 30px;
+  text-align: center;
+}
+
+.display-remain-time {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFF;
+}
+
+#pause {
+  outline: none;
+  background: transparent;
+  border: none;
+  margin-top: 10px;
+  width: 15px;
+  height: 15px;
+  position: relative;
+}
+
+.play::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 2.67px;
+  left: 5.33px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 7px solid #FFF;
+}
+
+.pause::after {
+  content: "";
+  position: absolute;
+  top: 2.67px;
+  left: 4px;
+  width: 5px;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 0.33px;
+  border: 1.67px solid #FFF;
+  border-top: none;
+  border-bottom: none;
+}
+
+#pause:hover { opacity: 0.8; }
+
+.e-c-base {
+  fill: none;
+  stroke: #FFF;
+  stroke-width: 10px
+}
+
+.e-c-progress {
+  fill: none;
+  stroke: orange;
+  stroke-width: 10px;
+  transition: stroke-dashoffset 0.7s;
+}
+
+.e-c-pointer {
+  fill: #FFF;
+  stroke: orange;
+  stroke-width: 2px;
+}
+
+#e-pointer { transition: transform 0.7s; }

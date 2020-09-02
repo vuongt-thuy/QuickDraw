@@ -51,7 +51,7 @@ var listKeywordVie = [
 "con bươm bướm",
 "cây xương rồng",
 "chiếc bánh ngọt",
-"máy tính",
+"máy tính bỏ túi",
 "bộ lịch",
 "con lạc đà",
 "máy ảnh",
@@ -303,7 +303,7 @@ var listKeywordVie = [
 "chiếc bàn",
 "ấm trà",
 "gấu bông",
-"điện thoại",
+"điện thoại bàn",
 "Tivi",
 "vợt tennis",
 "cái lều",
@@ -342,6 +342,6 @@ var listKeywordVie = [
 "ly rượu",
 "đồng hồ đeo tay",
 "yoga",
-"ngựa rằn",
+"ngựa vằn",
 "đường zigzag"
 ]
