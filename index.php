@@ -169,7 +169,7 @@ if((isset($_GET['language']) && $_GET['language']=='en') || !isset($_GET['langua
 
 <footer>
   <nav>
-   <a href="download.php?language=<?php echo $language ?>"><?php echo $footer[$language]['0'] ; ?></a>
+   <!-- <a href="download.php?language=<?php echo $language ?>"><?php echo $footer[$language]['0'] ; ?></a> -->
    <a href="terms.txt" target="_blank"><?php echo $footer[$language]['1'] ; ?></a>
    <a href="privacy.txt" target="_blank"><?php echo $footer[$language]['2'] ; ?></a>
    <a href="thanks.php?language=<?php echo $language ?>"><?php echo $footer[$language]['3'] ; ?></a>
