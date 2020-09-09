@@ -23248,4 +23248,8 @@ screen and (max-height: 809px) {
         left: 50%;
         width: 400px;
     }
+    #tickTrue {
+        margin-left: 0px;
+        margin-top: 35%;
+    }
 }

@@ -17863,6 +17863,7 @@ screen and (max-height: 809px) {
         }
     }
     #screens .content.download {
+        position: relative;
         width: 294px;
         margin: 20px;
         background: #fff;
@@ -23166,10 +23167,8 @@ header:not(.game) .getApp {
 
 @media screen and (max-width: 640px) {
     #screens .content.download {
-        position: relative;
-        max-width: 450px !important;
+        max-width: 450px;
         width: 100% !important;
-        margin: 20px !important;
     }
     .gTitle {
         z-index: 9999;
@@ -23182,7 +23181,7 @@ header:not(.game) .getApp {
 
 @media screen and (max-width: 500px) {
     #screens .content.download {
-        max-width: 300px !important;
+        max-width: 350px !important;
         width: 100% !important;
     }
     .gTitle h2 {
