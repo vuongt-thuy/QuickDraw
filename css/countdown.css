@@ -128,3 +128,18 @@ button[data-setter]:hover {
         left: 50%;
     }
 }
+@media only screen and (max-width: 400px){
+    .container {
+        margin-right: 20%; 
+    }
+}
+@media only screen and (max-width: 355px){
+    .container {
+        margin-right: 25%; 
+    }
+}
+@media only screen and (max-width: 330px){
+    .container {
+        margin-right: 30%; 
+    }
+}

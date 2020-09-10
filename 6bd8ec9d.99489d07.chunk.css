@@ -23174,9 +23174,11 @@ header:not(.game) .getApp {
     .gTitle {
         z-index: 9999;
         margin-top: 24px !important;
+        width: fit-content !important;
     }
     #logo-playgame {
         margin: 0px !important;
+        width: 75% !important;
     }
 }
 
@@ -23194,6 +23196,7 @@ header:not(.game) .getApp {
     }
     .gTitle {
         display: block !important;
+        margin-left: -10% !important; 
     }
 }
 
@@ -23225,3 +23228,4 @@ screen and (max-height: 809px) {
         height: auto !important;
     }
 }
+
