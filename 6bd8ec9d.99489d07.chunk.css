@@ -3488,7 +3488,8 @@ textarea:focus {
 }
 
 .gTitle h2 {
-    max-width: 270px;
+    /* max-width: 270px; */
+    max-width: 100%;
     padding: 0 5px;
     text-transform: uppercase;
     overflow: hidden;
@@ -15622,7 +15623,7 @@ screen and (max-height: 809px) {
         margin: 25px 0 20px
     }
     .thanks .right {
-        width: 420px;
+        /* width: 420px; */
         height: 403px
     }
     .thanks .right .item {
@@ -23182,11 +23183,17 @@ header:not(.game) .getApp {
 @media screen and (max-width: 500px) {
     #screens .content.download {
         max-width: 350px !important;
-        width: 100% !important;
+        width: 80% !important;
+        position: fixed;
+        left: 10%;
+        height: 80%;
     }
     .gTitle h2 {
         font-size: 17px !important;
         margin-top: 15px !important;
+    }
+    .gTitle {
+        display: block !important;
     }
 }
 
