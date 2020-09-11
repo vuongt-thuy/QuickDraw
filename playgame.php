@@ -159,14 +159,6 @@ include 'language.php';
                                     <!-- Draw Board -->
                                     <button class="" id="btnClear" onclick="clearDrawing()"></button>
                                     <button id="btnSkip" onclick="Skip()">
-                                        <?php 
-                                        if ($language == "vi") {
-                                            echo "Bỏ qua";
-                                        } else {
-                                            echo "Skip";
-                                        }
-
-                                        ?> 
                                         <i class="ic-skip"></i>
                                     </button>
                                     <div id="wrapper">

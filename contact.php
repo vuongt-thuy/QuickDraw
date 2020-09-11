@@ -80,8 +80,8 @@ include 'language.php';
                                     <div class="getApp">
                                         <h5><?php echo $top_nav[$language]['0'] ; ?>!</h5>
                                         <span>
-                                            <a class="ic-gPlay" href="https://play.google.com/store/apps/details?id=io.gartic.Gartic"><p>ANDROID</p></a>
-                                            <a class="ic-iOS" href="https://itunes.apple.com/us/app/gartic-io/id1270393677?mt=8"><p>iOS</p></a>
+                                            <a class="ic-gPlay" href=""><p>ANDROID</p></a>
+                                            <a class="ic-iOS" href="s"><p>iOS</p></a>
                                         </span>
                                     </div>
                                     <div class="logo internal">
