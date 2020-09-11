@@ -23192,12 +23192,21 @@ header:not(.game) .getApp {
         height: 80%;
     }
     .gTitle h2 {
-        font-size: 17px !important;
+        font-size: 15px !important;
         margin-top: 15px !important;
     }
     .gTitle {
         display: block !important;
         margin-left: -10% !important; 
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .gTitle {
+        margin-left: -25% !important; 
+    }
+    .gTitle h2{
+        font-size: 13px !important;
     }
 }
 

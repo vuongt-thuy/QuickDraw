@@ -152,7 +152,7 @@ include 'language.php';
                                 </div> -->
                                 <div class="title title-playgame">
                                     <span class="gTitle keyword">
-                                        <h2 style="font-size: 17px !important; padding-top: 2.5px" id="keywordRequired">KEY WORD</h2>
+                                        <h2 style="font-size: 17px; padding-top: 2.5px" id="keywordRequired">KEY WORD</h2>
                                     </span>
                                 </div>
                                 <div class="content download content-playgame" id="tools">
