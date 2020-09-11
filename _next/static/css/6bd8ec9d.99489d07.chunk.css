@@ -18187,7 +18187,8 @@ screen and (max-height: 809px) {
         -ms-transform: scale(.8);
         -o-transform: scale(.8);
         transform: scale(.8);
-        position: relative;
+        /*position: absolute;*/
+        padding-top:20px;
         z-index: 2
     }
     header:not(.game) .logo span {
