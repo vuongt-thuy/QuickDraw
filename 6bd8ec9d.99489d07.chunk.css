@@ -18113,7 +18113,9 @@ screen and (max-height: 809px) {
         -ms-transform: scale(.8);
         -o-transform: scale(.8);
         transform: scale(.8);
-        position: relative;
+        /*position: relative;*/
+        position: absolute;
+        top:20px;
         z-index: 2
     }
     header:not(.game) .logo span {
@@ -23175,9 +23177,11 @@ header:not(.game) .getApp {
     .gTitle {
         z-index: 9999;
         margin-top: 24px !important;
+        width: fit-content !important;
     }
     #logo-playgame {
         margin: 0px !important;
+        width: 75% !important;
     }
 }
 
@@ -23195,6 +23199,7 @@ header:not(.game) .getApp {
     }
     .gTitle {
         display: block !important;
+        margin-left: -10% !important; 
     }
 }
 
@@ -23224,5 +23229,12 @@ header:not(.game) .getApp {
 screen and (max-height: 809px) {
     header:not(.game)>div.logged {
         height: auto !important;
+    }
+}
+
+@media screen and (max-width: 640px){
+    header:not(.game) .logo {
+        position: absolute !important;
+        top: 20px;
     }
 }
