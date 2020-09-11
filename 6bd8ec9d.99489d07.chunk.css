@@ -23231,10 +23231,3 @@ screen and (max-height: 809px) {
         height: auto !important;
     }
 }
-
-@media screen and (max-width: 640px){
-    header:not(.game) .logo {
-        position: absolute !important;
-        top: 20px;
-    }
-}
