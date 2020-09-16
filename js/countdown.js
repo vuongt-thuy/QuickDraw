@@ -16,7 +16,7 @@ const displayOutput = document.querySelector('.display-remain-time')
 
 let intervalTimer;
 let timeLeft;
-let wholeTime = 60 * 60; // manage this to set the whole time 
+let wholeTime = 1 * 60; // manage this to set the whole time 
 let isPaused = false;
 let isStarted = false;
 

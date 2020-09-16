@@ -161,6 +161,7 @@ include 'language.php';
                                     <button id="btnSkip" onclick="Skip()">
                                         <i class="ic-skip"></i>
                                     </button>
+                                    <button class="selectAvatar" id="buttonTutorial"></button>
                                     <div id="wrapper">
                                         <div id="tickTrue">
                                             <img src="image/tick.png" alt="" width="200" height="200">
@@ -172,7 +173,6 @@ include 'language.php';
                                         <h2 id="result" style="text-align: center; color: #000;"></h2>
                                     </div>
                                 </div>
-
                             </div>
                             <footer>
                                 <nav>
@@ -502,11 +502,36 @@ include 'language.php';
                         </div>
                     </div>
                 </div>
+                <div id="popUp" style="display: none;">
+                    <div class="content" id="tutorial">
+                        <button class="close"></button>
+                        <div class="title"><h3>AVATAR</h3></div>
+                        <div class="contentPopup chooseAvatar">
+                            <div class="avatars listAvt1">
+                                <div class="scroll over top">
+                                    <div class="scrollElements">
+                                        <ul>
+                                            <li class="selected">
+                                                <div class="avatar"><div class="av avt0"></div></div>
+                                            </li>
+                                            <li class="">
+                                                <div class="avatar"><div class="av avt28"></div></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="scrollBar"><div class="scrollTrack" style="top: 5px; height: 80.4324px;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="btYellowBig ic-yes"><strong>CONFIRM</strong></button>
+                        </div>
+                    </div>
+                </div> 
             </div>
         </div>
         <canvas id="fundo"></canvas>
     </div>
-
     <script nomodule="" src="_next/static/runtime/polyfills-72c223e6dcb99d818fa8.js"></script>
     <script async="" data-next-page="/thanks" src="_next/static/jI9EZqYNN6u6IZXd9e4uV/pages/thanks.js"></script>
     <script async="" data-next-page="/_app" src="_next/static/jI9EZqYNN6u6IZXd9e4uV/pages/_app.js"></script>

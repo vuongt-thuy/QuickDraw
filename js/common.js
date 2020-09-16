@@ -42,3 +42,17 @@ function OnClickSetCookie(){
 	var portNumber = window.location.port;
 	window.location.href = "http://"+nameURL+":"+portNumber+"/QuickDraw/playgame.php?language="+language;
 }
+
+
+const buttonTutorial = document.querySelector('#buttonTutorial');
+allEventListners();
+function allEventListners() {
+  	buttonTutorial.addEventListener('click', togglerClick);
+}
+function togglerClick() {
+	alert("ff");
+  	document.getElementById("popUp").classList.add("d-block");
+}
+// $('#buttonTutorial').click(function() {
+//     $('#popUp').css("display","block");
+// });
