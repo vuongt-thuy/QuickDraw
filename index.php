@@ -116,11 +116,19 @@ if ((isset($_GET['language']) && $_GET['language'] == 'en') || !isset($_GET['lan
                   <img src="static/images/logo.png" alt="" width="94%">
                   <span><?php echo $top_nav[$language]['1']; ?></span>
                 </div>
-                <a href="https://twitter.com/GarticIO/status/1291743455841050625" target="_blank" class="lastUpdates">
+                <a href="#" class="lastUpdates">
                   <h5><?php echo $top_nav[$language]['2']; ?></h5>
                   <span>
                     <strong></strong>
-                    <p>Looking for Discord mods!</p>
+                    <p>
+                      <?php 
+                      if ($language == "vi") {
+                        echo("Một đội - Một ước mơ ! ");
+                      } else {
+                        echo("One team – One dream !");
+                      }
+                      ?>
+                    </p>
                   </span>
                 </a>
               </div>
@@ -176,15 +184,49 @@ if ((isset($_GET['language']) && $_GET['language'] == 'en') || !isset($_GET['lan
             <footer>
               <nav>
                 <!-- <a href="download.php?language=<?php echo $language ?>"><?php echo $footer[$language]['0']; ?></a> -->
-                <a href="terms.txt" target="_blank"><?php echo $footer[$language]['1']; ?></a>
-                <a href="privacy.txt" target="_blank"><?php echo $footer[$language]['2']; ?></a>
-                <a href="thanks.php?language=<?php echo $language ?>"><?php echo $footer[$language]['3']; ?></a>
-                <a href="contact.php?language=<?php echo $language ?>"><?php echo $footer[$language]['4']; ?></a>
+                <a href="#">
+                  <?php 
+                      if ($language == "vi") {
+                        echo("HOÀNG VIỆT THẮNG");
+                      } else {
+                        echo("HOANG VIET THANG");
+                      }
+                      ?>
+                </a>
+                <a href="#">
+                  <?php 
+                      if ($language == "vi") {
+                        echo("VƯƠNG THỊ THUÝ");
+                      } else {
+                        echo("VUONG THI THUY");
+                      }
+                      ?>
+                </a>
+                <a href="#">
+                  <?php 
+                      if ($language == "vi") {
+                        echo("NGUYỄN HỒNG MINH");
+                      } else {
+                        echo("NGUYEN HONG MINH");
+                      }
+                      ?>
+                </a>
+                <a href="lincense.php?language=<?php echo $language ?>">
+                  <?php 
+                      if ($language == "vi") {
+                        echo("GIẤY PHÉP");
+                      } else {
+                        echo("LICENSE");
+                      }
+                      ?>
+                </a>
               </nav>
               <div class="follow">
-                <a href="https://www.facebook.com/gartic.io/" class="ic-facebook" target="_blank"></a><a href="https://twitter.com/garticio" class="ic-twitter" target="_blank"></a>
-                <a href="https://www.youtube.com/channel/UCVAzJZIgcEt31Cf8REvGuhg" class="ic-youtube" target="_blank"></a><a href="https://www.instagram.com/gartic.io/" class="ic-instagram" target="_blank"></a>
-                <a href="https://discord.gg/9TTZau3" class="ic-discord" target="_blank"></a>
+                <a href="#" class="ic-facebook"></a>
+                <a href="#" class="ic-twitter"></a>
+                <a href="#" class="ic-youtube"></a>
+                <a href="#" class="ic-instagram"></a>
+                <a href="#" class="ic-discord"></a>
               </div>
             </footer>
           </div>
@@ -220,6 +262,6 @@ if ((isset($_GET['language']) && $_GET['language'] == 'en') || !isset($_GET['lan
         <script src="_next/static/chunks/69442508138b332cb1070c411bc37bdb1bd6eb52.67a895baa37b784729a6.js" async=""></script>
         <script src="_next/static/jI9EZqYNN6u6IZXd9e4uV/_buildManifest.js" async=""></script>
         <script src="_next/static/jI9EZqYNN6u6IZXd9e4uV/_ssgManifest.js" async=""></script>
-</body>
+      </body>
 
-</html>
+      </html>

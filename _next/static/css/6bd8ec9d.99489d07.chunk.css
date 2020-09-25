@@ -23241,7 +23241,7 @@ screen and (max-height: 809px) {
 
 @media only screen and (max-width: 640px) {
     #timeOutPopup,
-    #winPopup {
+    #winPopup,#showHint {
         position: absolute;
         display: block;
         transform: translate(-50%, -50%);

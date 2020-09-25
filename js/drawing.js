@@ -244,6 +244,7 @@ function result() {
       if (numberOfAnswer < totalQuizz) {
         InitKeyword();
       }else if(numberOfAnswer == totalQuizz){
+        $('#showHint').css('display','none');
         $('#popUp').css('display', 'block');
         $('#winPopup').css('display','block');
         $('#tickTrue').css('display', 'none');
@@ -276,11 +277,28 @@ function InitKeyword(){
   };
   var keywordRequiredText = translationsKeyword[language].keywordRequire;
   document.getElementById("keywordRequired").innerHTML = keywordRequiredText;
+  $.getJSON("Hint/stencils.json", function(data){
+    $.each( data, function( key, val ) {
+      if (key == keywordRequired) {
+        document.getElementById('imageHint').src = val[0].src;
+      }
+    });
+  }).fail(function(){
+    console.log("An error has occurred.");
+  });
 }
 function Skip(){
   console.log("Skip");
   clearDrawing();
   InitKeyword();
+}
+function ShowHint(){
+  $('#popUp').css('display', 'block');
+  $('#showHint').css('display', 'block');
+}
+function HideHint(){
+  $('#showHint').css('display', 'none');
+  $('#popUp').css('display', 'none');
 }
 // Create and Fill Array
 function createArray(len, itm) {

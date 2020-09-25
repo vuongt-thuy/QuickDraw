@@ -5,8 +5,8 @@ $title = array(
 );
 
 $top_nav = array (
-	'en' => array("GET THE APP!", "DRAW EVERYTHING AND WIN", "LAST UPDATES", "INFO"),
-	'vi' => array("TẢI ỨNG DỤNG!", "VẼ MỌI THỨ VÀ CHIẾN THẮNG", "NHỮNG CẬP NHẬT TRƯỚC", "THÔNG TIN")
+	'en' => array("GET THE APP!", "DRAW EVERYTHING AND WIN", "FLAMES TEAM", "INFO"),
+	'vi' => array("TẢI ỨNG DỤNG!", "VẼ MỌI THỨ VÀ CHIẾN THẮNG", "NHÓM FLAMES", "THÔNG TIN")
 );
 
 $content_left = array(
@@ -25,8 +25,8 @@ $assets_page = array(
 );
 
 $thanks_page = array(
-	'en' => array("THANKS", "THANKS FOR HELPING US", "We would like to thank the people that voluntarily helped us to improve the game creating a better experience for the players around the world. Help us to translate the game interface and join this golden players list.", "CONTRIBUTE"),
-	'vi' => array("CẢM ƠN", "CẢM ƠN ĐÃ GIÚP CHÚNG TÔI", "Chúng tôi muốn dành lời cảm ơn đến các tình nguyện viên đã giúp chúng tôi cải thiện trải nghiệm của người chơi trên khắp thế giới. Giúp chúng tôi dịch và tham gia vào danh sách thành viên gold.", "ĐÓNG GÓP")
+	'en' => array("LICENSE", "THANKS FOR HELPING US", "We would like to thank the people that voluntarily helped us to improve the game creating a better experience for the players around the world. Help us to translate the game interface and join this golden players list.", "CONTRIBUTE"),
+	'vi' => array("GIẤY PHÉP", "CẢM ƠN ĐÃ GIÚP CHÚNG TÔI", "Chúng tôi muốn dành lời cảm ơn đến các tình nguyện viên đã giúp chúng tôi cải thiện trải nghiệm của người chơi trên khắp thế giới. Giúp chúng tôi dịch và tham gia vào danh sách thành viên gold.", "ĐÓNG GÓP")
 );
 
 $contact_page = array(

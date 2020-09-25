@@ -42,6 +42,7 @@ function timer(seconds) { //counts time, takes seconds
             clearInterval(intervalTimer);
             isStarted = false;
             displayTimeLeft(wholeTime);
+            $('#showHint').css('display','none');
             $('#popUp').css('display', 'block');
             $('#timeOutPopup').css('display', 'block');
             return;
