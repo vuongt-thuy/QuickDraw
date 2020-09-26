@@ -99,10 +99,10 @@ include 'language.php';
                                 <div class="getApp">
                                     <h5><?php echo $top_nav[$language]['0']; ?>!</h5>
                                     <span>
-                                        <a class="ic-gPlay" href="">
+                                        <a class="ic-gPlay" href="#">
                                             <p>ANDROID</p>
                                         </a>
-                                        <a class="ic-iOS" href="">
+                                        <a class="ic-iOS" href="#">
                                             <p>iOS</p>
                                         </a>
                                     </span>

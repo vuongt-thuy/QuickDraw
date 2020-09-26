@@ -103,10 +103,10 @@ if ((isset($_GET['language']) && $_GET['language'] == 'en') || !isset($_GET['lan
                 <div class="getApp">
                   <h5><?php echo $top_nav[$language]['0']; ?></h5>
                   <span>
-                    <a class="ic-gPlay" href="">
+                    <a class="ic-gPlay" href="#">
                       <p>ANDROID</p>
                     </a>
-                    <a class="ic-iOS" href="">
+                    <a class="ic-iOS" href="#">
                       <p>iOS</p>
                     </a>
                   </span>
@@ -157,83 +157,106 @@ if ((isset($_GET['language']) && $_GET['language'] == 'en') || !isset($_GET['lan
                         <span><?php echo $content_left[$language]['2']; ?>:</span>
                         <label class="select">
                           <select onchange="set_language()" name="language" id="language">
-                            <optgroup label="Available Language">
-                              <option value="en" <?php echo $en_select; ?>>English</option>
-                              <option value="vi" <?php echo $vi_select; ?>>Tiếng Việt</option>
+                            <optgroup label='
+                            <?php 
+                            if ($language == "vi") {
+                              echo("Chọn ngôn ngữ");
+                              } else {
+                                echo("Select language");
+                              }
+                              ?>
+                              '>
+                              <option value="en" <?php echo $en_select; ?>>
+                                <?php 
+                                if ($language == "vi") {
+                                  echo("Tiếng Anh");
+                                } else {
+                                  echo("English");
+                                }
+                                ?>
+                              </option>
+                              <option value="vi" <?php echo $vi_select; ?>>
+                                <?php 
+                                if ($language == "vi") {
+                                  echo("Tiếng Việt");
+                                } else {
+                                  echo("Vietnamese");
+                                }
+                                ?></option>
 
-                            </optgroup>
-                          </select>
-                        </label>
+                              </optgroup>
+                            </select>
+                          </label>
+                        </div>
                       </div>
                     </div>
+                    <div class="actions" id="myBtn">
+                      <a class="btYellowBig ic-playHome">
+                        <button onclick="OnClickSetCookie()">
+                          <strong><?php echo $content_left[$language]['3']; ?>!</strong>
+                        </button>
+                      </a>
+                    </div>
                   </div>
-                  <div class="actions" id="myBtn">
-                    <a class="btYellowBig ic-playHome">
-                      <button onclick="OnClickSetCookie()">
-                        <strong><?php echo $content_left[$language]['3']; ?>!</strong>
-                      </button>
-                    </a>
-                  </div>
+
                 </div>
-
               </div>
+
+
+
+              <footer>
+                <nav>
+                  <!-- <a href="download.php?language=<?php echo $language ?>"><?php echo $footer[$language]['0']; ?></a> -->
+                  <a href="#">
+                    <?php 
+                    if ($language == "vi") {
+                      echo("HOÀNG VIỆT THẮNG");
+                    } else {
+                      echo("HOANG VIET THANG");
+                    }
+                    ?>
+                  </a>
+                  <a href="#">
+                    <?php 
+                    if ($language == "vi") {
+                      echo("VƯƠNG THỊ THUÝ");
+                    } else {
+                      echo("VUONG THI THUY");
+                    }
+                    ?>
+                  </a>
+                  <a href="#">
+                    <?php 
+                    if ($language == "vi") {
+                      echo("NGUYỄN HỒNG MINH");
+                    } else {
+                      echo("NGUYEN HONG MINH");
+                    }
+                    ?>
+                  </a>
+                  <a href="lincense.php?language=<?php echo $language ?>">
+                    <?php 
+                    if ($language == "vi") {
+                      echo("GIẤY PHÉP");
+                    } else {
+                      echo("LICENSE");
+                    }
+                    ?>
+                  </a>
+                </nav>
+                <div class="follow">
+                  <a href="#" class="ic-facebook"></a>
+                  <a href="#" class="ic-twitter"></a>
+                  <a href="#" class="ic-youtube"></a>
+                  <a href="#" class="ic-instagram"></a>
+                  <a href="#" class="ic-discord"></a>
+                </div>
+              </footer>
             </div>
-
-
-
-            <footer>
-              <nav>
-                <!-- <a href="download.php?language=<?php echo $language ?>"><?php echo $footer[$language]['0']; ?></a> -->
-                <a href="#">
-                  <?php 
-                      if ($language == "vi") {
-                        echo("HOÀNG VIỆT THẮNG");
-                      } else {
-                        echo("HOANG VIET THANG");
-                      }
-                      ?>
-                </a>
-                <a href="#">
-                  <?php 
-                      if ($language == "vi") {
-                        echo("VƯƠNG THỊ THUÝ");
-                      } else {
-                        echo("VUONG THI THUY");
-                      }
-                      ?>
-                </a>
-                <a href="#">
-                  <?php 
-                      if ($language == "vi") {
-                        echo("NGUYỄN HỒNG MINH");
-                      } else {
-                        echo("NGUYEN HONG MINH");
-                      }
-                      ?>
-                </a>
-                <a href="lincense.php?language=<?php echo $language ?>">
-                  <?php 
-                      if ($language == "vi") {
-                        echo("GIẤY PHÉP");
-                      } else {
-                        echo("LICENSE");
-                      }
-                      ?>
-                </a>
-              </nav>
-              <div class="follow">
-                <a href="#" class="ic-facebook"></a>
-                <a href="#" class="ic-twitter"></a>
-                <a href="#" class="ic-youtube"></a>
-                <a href="#" class="ic-instagram"></a>
-                <a href="#" class="ic-discord"></a>
-              </div>
-            </footer>
           </div>
-        </div>
-        <canvas id="fundo"></canvas>
+          <canvas id="fundo"></canvas>
 
-        <script>
+          <script>
           // function set_language() {
           //     var language = jQuery('#language').val();
           //     var nameURL = window.location.hostname;

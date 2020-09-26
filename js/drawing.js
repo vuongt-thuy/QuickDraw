@@ -7,7 +7,7 @@ var language = jQuery('#language').text();
 var keywordRequired;
 var p_title_en;
 var numberOfAnswer = 0;
-var totalQuizz = 5;
+var totalQuizz = 10;
 // Install Paper.js
 paper.install(window);
 
